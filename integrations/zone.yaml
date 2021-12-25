@@ -1,0 +1,15 @@
+---
+zone:
+  - name: Home
+    latitude: !secret LATITUDE
+    longitude: !secret LONGITUDE
+    radius: 200
+    icon: mdi:home-assistant
+    passive: false
+
+  - name: Ultimaker
+    latitude: !secret ULTIMAKER_LATITUDE
+    longitude: !secret ULTIMAKER_LONGITUDE
+    radius: 200
+    icon: mdi:printer-3d-nozzle
+    passive: false

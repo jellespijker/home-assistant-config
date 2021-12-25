@@ -1,0 +1,12 @@
+energy_daily_dishwasher:
+  source: sensor.power_dishwasher
+  name: Energy Daily Dishwasher
+  cycle: daily
+energy_weekly_dishwasher:
+  source: sensor.power_dishwasher
+  name: Energy Weekly Dishwasher
+  cycle: weekly
+energy_monthly_dishwasher:
+  source: sensor.power_dishwasher
+  name: Energy Monthly Dishwasher
+  cycle: monthly

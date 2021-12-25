@@ -1,0 +1,9 @@
+---
+platform: powercalc
+entity_id: climate.thermostat_livingroom
+name: IR floorheating Livingroom
+standby_power: 0.2
+fixed:
+  states_power:
+    hvac_action|off: 0.2
+    hvac_action|heating: 3750

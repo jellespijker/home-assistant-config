@@ -1,0 +1,62 @@
+---
+id: '1639924153788'
+alias: Control lights hallway 1st floor
+description: ''
+trigger:
+- platform: device
+  device_id: c272a492bd1030c380deaa4bb469ae81
+  domain: shelly
+  type: long
+  subtype: button
+  id: long
+- platform: device
+  device_id: c272a492bd1030c380deaa4bb469ae81
+  domain: shelly
+  type: single
+  subtype: button
+  id: single
+- platform: device
+  device_id: c272a492bd1030c380deaa4bb469ae81
+  domain: shelly
+  type: double
+  subtype: button
+  id: double
+- platform: device
+  device_id: c272a492bd1030c380deaa4bb469ae81
+  domain: shelly
+  type: triple
+  subtype: button
+  id: triple
+condition: []
+action:
+- choose:
+  - conditions:
+    - condition: trigger
+      id: long
+    sequence:
+    - type: toggle
+      device_id: 2d991ad3c22f1d315fbbf40018c90e42
+      entity_id: light.hallway
+      domain: light
+    - type: toggle
+      device_id: 156ca73642961a69166a7ead4f7980b9
+      entity_id: light.hallway_first_floor
+      domain: light
+  - conditions:
+    - condition: trigger
+      id: single
+    sequence:
+    - type: toggle
+      device_id: 156ca73642961a69166a7ead4f7980b9
+      entity_id: light.hallway_first_floor
+      domain: light
+  - conditions:
+    - condition: trigger
+      id: double
+    sequence:
+    - type: toggle
+      device_id: 2d991ad3c22f1d315fbbf40018c90e42
+      entity_id: light.hallway
+      domain: light
+  default: []
+mode: single

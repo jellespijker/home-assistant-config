@@ -1,0 +1,11 @@
+---
+# Configure my Solar panel inverter a Sunnyboy 3.6kW
+#
+# https://www.home-assistant.io/integrations/sma/
+#
+platform: sma
+host: !secret SMA_IP
+password: !secret SMA_PASSWORD
+ssl: true
+verify_ssl: false
+group: user

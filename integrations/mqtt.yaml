@@ -1,0 +1,7 @@
+---
+mqtt:
+  broker: !secret MQTT_BROKER
+  port: !secret MQTT_PORT
+  username: !secret MQTT_USERNAME
+  password: !secret MQTT_PASSWORD
+  discovery: true

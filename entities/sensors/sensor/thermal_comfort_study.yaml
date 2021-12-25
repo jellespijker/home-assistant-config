@@ -1,0 +1,8 @@
+---
+platform: thermal_comfort
+sensors:
+  studyroom:
+    friendly_name: Thermal Comfort studyroom
+    unique_id: 5ff5c9ca-8482-4c27-a9b5-2d9d442185d4
+    temperature_sensor: sensor.temperature_studyroom
+    humidity_sensor: sensor.humidity_studyroom

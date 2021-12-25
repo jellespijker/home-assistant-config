@@ -1,0 +1,7 @@
+---
+platform: integration
+source: sensor.energy_washingmachine
+name: power_washingmachine
+round: 2
+method: left
+unit_prefix: k

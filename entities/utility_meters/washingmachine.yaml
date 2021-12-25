@@ -1,0 +1,12 @@
+energy_daily_washingmachine:
+  source: sensor.power_washingmachine
+  name: Energy Daily Washingmachine
+  cycle: daily
+energy_weekly_washingmachine:
+  source: sensor.power_washingmachine
+  name: Energy Weekly Washingmachine
+  cycle: weekly
+energy_monthly_washingmachine:
+  source: sensor.power_washingmachine
+  name: Energy Monthly Washingmachine
+  cycle: monthly

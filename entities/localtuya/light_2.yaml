@@ -1,0 +1,11 @@
+---
+# LSC light Tuya based controlling the hallway light.
+#
+# https://github.com/jellespijker/localtuya
+#
+host: !secret LOCALTUYA_LIGHT_2_IP
+device_id: !secret LOCALTUYA_LIGHT_2_DEVICE_ID
+local_key: !secret LOCALTUYA_LIGHT_2_LOCAL_KEY
+friendly_name: Light 2
+protocol_version: "3.3"
+entities: !include_dir_list ../lights/localtuya/light_2

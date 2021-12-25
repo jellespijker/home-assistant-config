@@ -1,0 +1,8 @@
+---
+platform: thermal_comfort
+sensors:
+  livingroom:
+    friendly_name: Thermal Comfort Livingroom
+    unique_id: c1999d03-555d-47b7-9d5c-82c6f46f8799
+    temperature_sensor: sensor.temperature_livingroom
+    humidity_sensor: sensor.humidity_livingroom

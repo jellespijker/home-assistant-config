@@ -1,0 +1,10 @@
+---
+platform: light
+friendly_name: Outside Front
+id: 1
+color_mode: 2
+brightness: 3
+color_temp: 4
+color: 5
+brightness_lower: 25
+brightness_upper: 255

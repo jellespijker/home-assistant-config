@@ -1,0 +1,19 @@
+---
+# The logger integration lets you define the level of logging activities
+# in Home Assistant.
+#
+# I use this to reduce error messages for specific things,
+# or set the level for custom integrations on which I'm work atm
+#
+logger:
+  default: warning
+
+  filters:
+    homeassistant.components.generic.camera:
+      - "Error getting new camera image from Generic Camera: All connection attempts failed"
+      - "Error getting new camera image from johhnycrash_cam: All connection attempts failed"
+      - "Error getting new camera image from ultipeer2_cam: All connection attempts failed"
+
+  logs:
+    custom_components.ultimaker: info
+    custom_components.localtuya: info

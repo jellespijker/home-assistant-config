@@ -1,0 +1,11 @@
+---
+# Kruidvat switch Tuya based
+#
+# https://github.com/jellespijker/localtuya
+#
+host: !secret LOCALTUYA_SWITCH_1_IP
+device_id: !secret LOCALTUYA_SWITCH_1_DEVICE_ID
+local_key: !secret LOCALTUYA_SWITCH_1_LOCAL_KEY
+friendly_name: Switch 1
+protocol_version: "3.3"
+entities: !include_dir_list ../switches/localtuya/switch_1/

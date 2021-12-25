@@ -1,0 +1,8 @@
+---
+sensor:
+  - name: Energy Printers
+    state: >
+      {{ state_attr('switch.ultipeer2', 'current_consumption') | float(default = 0) }}
+    unit_of_measurement: W
+    state_class: measurement
+    device_class: energy

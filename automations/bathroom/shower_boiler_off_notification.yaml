@@ -1,0 +1,20 @@
+id: '1639174572048'
+alias: shower boiler turned off notification
+description: ''
+trigger:
+- platform: device
+  type: turned_off
+  device_id: 0f2350a1cd8920b0dc74d827a4e381b2
+  entity_id: switch.shower_boiler
+  domain: switch
+  for:
+    hours: 1
+    minutes: 0
+    seconds: 0
+    milliseconds: 0
+condition: []
+action:
+- service: notify.mobile_app_phone_jelle
+  data:
+    message: shower boiler turned off for more than an hour
+mode: single

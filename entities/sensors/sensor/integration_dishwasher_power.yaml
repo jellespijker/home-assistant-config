@@ -1,0 +1,6 @@
+---
+platform: integration
+source: sensor.energy_dishwasher
+name: power_dishwasher
+method: left
+unit_prefix: k

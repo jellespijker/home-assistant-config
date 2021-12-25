@@ -1,0 +1,19 @@
+---
+platform: climate
+friendly_name: Thermostat kitchen
+id: 1
+heuristic_action: false
+eco_value: 'Eco'
+target_temperature_dp: 2
+current_temperature_dp: 3
+temperature_step: 0.5
+precision: 0.1
+hvac_mode_dp: 4
+hvac_mode_set: "Manual/Auto"
+hvac_action_dp: 14
+hvac_action_set: "heating/no_heating"
+eco_dp: 4
+preset_dp: 4
+preset_set: "Manual/Holiday/Program"
+temperature_unit: "celsius"
+target_precision: 0.1

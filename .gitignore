@@ -1,0 +1,22 @@
+# Ignore folders.
+.storage/
+.cloud/
+.idea/
+.Trash-1000/
+.history/
+.vscode/
+.shopping_list.json
+*.log
+*.log.*
+*.db*
+deps/
+v4_uuids.txt
+ip_bans.yaml
+secrets.yaml
+localtuya_secrets.yaml
+known_devices.yaml
+www/
+ESPHome/.esphome/
+image/
+custom_components/
+themes/

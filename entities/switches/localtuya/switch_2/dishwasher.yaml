@@ -1,0 +1,7 @@
+---
+platform: switch
+friendly_name: Dishwasher
+id: 1
+current: 18
+current_consumption: 19
+voltage: 20

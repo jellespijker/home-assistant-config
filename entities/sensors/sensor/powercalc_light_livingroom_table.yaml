@@ -1,0 +1,7 @@
+---
+platform: powercalc
+entity_id: light.livingroom_table
+standby_power: 0.2
+linear:
+  min_power: 1.0
+  max_power: 8.0

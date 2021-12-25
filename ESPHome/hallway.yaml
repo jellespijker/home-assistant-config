@@ -1,0 +1,105 @@
+substitutions:
+  name: hallway
+  friendly_name: "Hallway"
+
+
+esphome:
+  name: esphome-${name}
+  platform: ESP32
+  board: nodemcu-32s
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+
+ota:
+  password: ""
+
+wifi:
+  ssid: !secret IOT_SSID
+  password: !secret IOT_SSID_PASSWORD
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esphome-${friendly_name}"
+    password: !secret ESPHOME_AP
+
+captive_portal:
+
+text_sensor:
+  - platform: template
+    name: "Uptime ${friendly_name} Human Readable:"
+    id: uptime_human
+    icon: mdi:clock-start
+
+sensor:
+  - platform: uptime
+    name: "Uptime ${friendly_name}"
+    id: uptime_sensor
+    update_interval: 60s
+    on_raw_value:
+      then:
+        - text_sensor.template.publish:
+            id: uptime_human
+            state: !lambda |-
+              int seconds = round(id(uptime_sensor).raw_state);
+              int days = seconds / (24 * 3600);
+              seconds = seconds % (24 * 3600);
+              int hours = seconds / 3600;
+              seconds = seconds % 3600;
+              int minutes = seconds /  60;
+              seconds = seconds % 60;
+              return (
+                (days ? to_string(days) + "d " : "") +
+                (hours ? to_string(hours) + "h " : "") +
+                (minutes ? to_string(minutes) + "m " : "") +
+                (to_string(seconds) + "s")
+              ).c_str();
+
+  - platform: wifi_signal
+    name: "WiFi ${friendly_name}"
+    update_interval: 60s
+
+  - platform: dht
+    pin: 35
+    model: DHT22_TYPE2
+    temperature:
+      name: "Temperature ${friendly_name}"
+      filters:
+        - median
+    humidity:
+      name: "Humidity ${friendly_name}"
+      filters:
+        - median
+    update_interval: 30s
+
+  - platform: pulse_counter
+    name: "Power meter pulse ${friendly_name}"
+    pin: 12
+    count_mode:
+      rising_edge: DISABLE
+      falling_edge: INCREMENT
+    update_interval: 10sec
+    unit_of_measurement: "kW"
+    accuracy_decimals: 5
+    icon: "mdi:flash"
+    filters:
+      - multiply: 0.01125
+
+    total:
+      unit_of_measurement: 'kWh'
+      name: 'Power Meter ${friendly_name}'
+      icon: "mdi:flash"
+      accuracy_decimals: 5
+      filters:
+        - multiply: 0.0053333
+  
+binary_sensor:
+  - platform: gpio
+    pin: 34
+    name: "PIR ${friendly_name}"
+    device_class: motion
+ 

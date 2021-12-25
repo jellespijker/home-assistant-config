@@ -1,0 +1,6 @@
+---
+sensor:
+  name: Temperature Livingroom Climate
+  state: "{{ state_attr('climate.thermostat_livingroom', 'current_temperature') | float(default = 0) }}"
+  unit_of_measurement: °C
+  state_class: measurement

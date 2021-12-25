@@ -1,0 +1,9 @@
+platform: nederlandse_spoorwegen
+api_key: !secret NS_API_KEY
+routes:
+  - name: Tiel-Geldermalsen
+    from: Tl
+    to: Gdm
+  - name: Geldermalsen-Tiel
+    from: Gdm
+    to: Tl

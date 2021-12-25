@@ -1,0 +1,12 @@
+---
+asuswrt:
+  host: !secret ROUTER_IP
+  username: !secret ROUTER_USER
+  password: !secret ROUTER_PASSWORD
+  port: !secret ROUTER_PORT
+  sensors:
+    - devices
+    - upload
+    - download
+    - upload_speed
+    - download_speed

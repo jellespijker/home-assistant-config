@@ -1,0 +1,6 @@
+---
+# Configures my camera streams
+#
+# https://www.home-assistant.io/integrations/camera/
+#
+camera: !include_dir_list ../entities/camera

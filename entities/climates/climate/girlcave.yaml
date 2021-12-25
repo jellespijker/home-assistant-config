@@ -1,0 +1,23 @@
+---
+# Configure the custom thermostat in the guest bedroom.
+#
+# This setup consist of an IR panel with a cheap Tuya based switch and a NodeMCU ESP8266 with a DHT-22 sensor
+# running a custom script and connected via Modbus protocol
+#
+# https://www.home-assistant.io/integrations/generic_thermostat/
+#
+platform: generic_thermostat
+unique_id: aaf18642-cdbc-4074-9124-a2667880238f
+name: Thermostat Girlcave
+heater: switch.ir_panel_girlcave
+target_sensor: sensor.temperature_girl_cave
+min_temp: 10.0
+max_temp: 25.0
+ac_mode: false
+target_temp: 19.0
+cold_tolerance: 0.5
+hot_tolerance: 0.0
+initial_hvac_mode: 'off'
+away_temp: 15
+precision: 0.5
+min_cycle_duration: 00:05:00

@@ -1,0 +1,6 @@
+---
+platform: waze_travel_time
+name: Ultimaker-Home
+origin: zone.ultimaker
+destination: zone.home
+region: 'EU'

@@ -1,0 +1,8 @@
+---
+platform: p2000
+name: "Home P2000"
+regios: 7
+radius: 5000
+scan_interval: 10
+latitude: !secret LATITUDE
+longitude: !secret LONGITUDE

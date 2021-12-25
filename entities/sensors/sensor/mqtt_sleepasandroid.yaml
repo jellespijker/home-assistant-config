@@ -1,0 +1,5 @@
+---
+platform: mqtt
+name: "Jelle Sleep"
+state_topic: "SleepAsAndroid"
+value_template: "{{ value_json.event | replace('_', ' ') }}"

@@ -1,0 +1,166 @@
+- id: '1638704091025'
+  name: Sleep Climate
+  entities:
+    climate.thermostat_guestbedroom:
+      hvac_modes:
+      - heat
+      - 'off'
+      min_temp: 10
+      max_temp: 25
+      target_temp_step: 0.5
+      preset_modes:
+      - none
+      - away
+      current_temperature: 14.5
+      temperature: 15
+      hvac_action: heating
+      preset_mode: none
+      friendly_name: Thermostat Guestbedroom
+      supported_features: 17
+      state: heat
+    climate.thermostat_livingroom:
+      hvac_modes:
+      - heat
+      - auto
+      - 'off'
+      min_temp: 7
+      max_temp: 35
+      target_temp_step: 0.5
+      preset_modes:
+      - none
+      - away
+      - home
+      - eco
+      current_temperature: 17
+      temperature: 17
+      hvac_action: heating
+      preset_mode: eco
+      friendly_name: Thermostat Livingroom
+      supported_features: 17
+      state: auto
+    climate.thermostat_kitchen:
+      hvac_modes:
+      - heat
+      - auto
+      - 'off'
+      min_temp: 7
+      max_temp: 35
+      target_temp_step: 0.5
+      preset_modes:
+      - none
+      - away
+      - home
+      - eco
+      current_temperature: 17
+      temperature: 17
+      hvac_action: 'off'
+      preset_mode: eco
+      friendly_name: Thermostat kitchen
+      supported_features: 17
+      state: auto
+    climate.thermostat_study:
+      hvac_modes:
+      - heat
+      - 'off'
+      min_temp: 10
+      max_temp: 25
+      target_temp_step: 0.5
+      preset_modes:
+      - none
+      - away
+      current_temperature: 17
+      temperature: 17
+      hvac_action: 'off'
+      preset_mode: none
+      friendly_name: Thermostat Study
+      supported_features: 17
+      state: 'off'
+  icon: mdi:sleep
+- id: '1639249663989'
+  name: 'livingroom climate ECO '
+  entities:
+    climate.thermostat_livingroom:
+      hvac_modes:
+      - heat
+      - auto
+      - 'off'
+      min_temp: 7
+      max_temp: 35
+      target_temp_step: 0.5
+      preset_modes:
+      - none
+      - away
+      - home
+      - eco
+      current_temperature: 20
+      temperature: 17.5
+      hvac_action: 'off'
+      preset_mode: eco
+      friendly_name: Thermostat Livingroom
+      supported_features: 17
+      state: auto
+    climate.thermostat_kitchen:
+      hvac_modes:
+      - heat
+      - auto
+      - 'off'
+      min_temp: 7
+      max_temp: 35
+      target_temp_step: 0.5
+      preset_modes:
+      - none
+      - away
+      - home
+      - eco
+      current_temperature: 18.5
+      temperature: 18
+      hvac_action: 'off'
+      preset_mode: eco
+      friendly_name: Thermostat kitchen
+      supported_features: 17
+      state: auto
+  icon: mdi:thermometer-chevron-down
+- id: '1639249741715'
+  name: livingroom climate heat
+  entities:
+    climate.thermostat_livingroom:
+      hvac_modes:
+      - heat
+      - auto
+      - 'off'
+      min_temp: 7
+      max_temp: 35
+      target_temp_step: 0.5
+      preset_modes:
+      - none
+      - away
+      - home
+      - eco
+      current_temperature: 20.5
+      temperature: 22
+      hvac_action: heating
+      preset_mode: none
+      friendly_name: Thermostat Livingroom
+      supported_features: 17
+      state: heat
+    climate.thermostat_kitchen:
+      hvac_modes:
+      - heat
+      - auto
+      - 'off'
+      min_temp: 7
+      max_temp: 35
+      target_temp_step: 0.5
+      preset_modes:
+      - none
+      - away
+      - home
+      - eco
+      current_temperature: 18.5
+      temperature: 22
+      hvac_action: heating
+      preset_mode: none
+      friendly_name: Thermostat kitchen
+      supported_features: 17
+      state: heat
+  icon: mdi:thermometer-chevron-up

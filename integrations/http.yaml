@@ -1,0 +1,4 @@
+---
+http:
+  ssl_certificate: !secret SSL_CERTIFICATE_PATH
+  ssl_key: !secret SSL_KEY_PATH

@@ -1,0 +1,8 @@
+platform: afvalbeheer
+wastecollector: Avri
+resources:
+  - gft
+  - papier
+postcode: !secret POSTCODE
+streetnumber: !secret STREETNUMBER
+upcomingsensor: 1

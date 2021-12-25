@@ -1,0 +1,3 @@
+---
+sensor.owm_pollution_ammonia_nh3:
+  friendly_name: NH3

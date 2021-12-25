@@ -1,0 +1,7 @@
+---
+sensor:
+  - name: Humidity Outside
+    state: "{{ states('sensor.openweathermap_humidity') | float(default = 0) }}"
+    unit_of_measurement: "%"
+    state_class: measurement
+    icon: "mdi:water-percent"

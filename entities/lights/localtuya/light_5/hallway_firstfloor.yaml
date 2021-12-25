@@ -1,0 +1,9 @@
+---
+platform: light
+friendly_name: Hallway First Floor
+id: 20
+color_mode: 21
+brightness: 22
+color_temp: 23
+brightness_lower: 29
+brightness_upper: 1000

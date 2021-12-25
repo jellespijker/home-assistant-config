@@ -1,0 +1,3 @@
+---
+sensor.owm_pollution_carbon_monoxide_co:
+  friendly_name: CO

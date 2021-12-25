@@ -1,0 +1,23 @@
+---
+# Configure the custom thermostat in my study/work-room.
+#
+# This setup consist of an IR panel with a cheap Tuya based switch and a NodeMCU ESP8266 with a DHT-22 sensor
+# running a custom script and connected via Modbus protocol
+#
+# https://www.home-assistant.io/integrations/generic_thermostat/
+#
+platform: generic_thermostat
+unique_id: e9fafa64-f82e-4cc1-aad4-83d1e395b74d
+name: Thermostat Study
+heater: switch.ir_panel_study
+target_sensor: sensor.temperature_studyroom
+min_temp: 10.0
+max_temp: 25.0
+ac_mode: false
+target_temp: 19.0
+cold_tolerance: 0.5
+hot_tolerance: 0.0
+initial_hvac_mode: 'off'
+away_temp: 15
+precision: 0.5
+min_cycle_duration: 00:05:00

@@ -1,0 +1,15 @@
+id: '1635267840059'
+alias: turn off front light
+description: 'Turn of the front light at sunrise or at 1am'
+trigger:
+- platform: sun
+  event: sunrise
+- platform: time
+  at: 01:00:00
+condition: []
+action:
+- type: turn_off
+  device_id: a6c8a931f7b9f96fe4eefe5750579b60
+  entity_id: light.outside_front
+  domain: light
+mode: single

@@ -1,0 +1,12 @@
+energy_daily_total:
+  source: sensor.power_meter_hallway
+  name: Energy Daily Total
+  cycle: daily
+energy_weekly_total:
+  source: sensor.power_meter_hallway
+  name: Energy Weekly Total
+  cycle: weekly
+energy_monthly_total:
+  source: sensor.power_meter_hallway
+  name: Energy Monthly Total
+  cycle: monthly

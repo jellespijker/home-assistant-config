@@ -1,0 +1,16 @@
+id: '1635267756681'
+alias: turn on front light
+description: 'Turn on front light 15 min after sunrise or at 6 am'
+trigger:
+- platform: sun
+  event: sunset
+  offset: 00:15:00
+- platform: time
+  at: 06:00:00
+condition: []
+action:
+- type: turn_on
+  device_id: a6c8a931f7b9f96fe4eefe5750579b60
+  entity_id: light.outside_front
+  domain: light
+mode: single

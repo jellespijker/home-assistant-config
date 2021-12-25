@@ -1,0 +1,8 @@
+---
+platform: thermal_comfort
+sensors:
+  guestbedroom:
+    friendly_name: Thermal Comfort guestbedroom
+    unique_id: d405c2b7-16e5-42a3-adc9-7da35715bd0c
+    temperature_sensor: sensor.temperature_guest_bedroom
+    humidity_sensor: sensor.humidity_guest_bedroom

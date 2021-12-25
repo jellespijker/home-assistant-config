@@ -1,0 +1,13 @@
+---
+# Configure PowerCalc Integration
+#
+# https://github.com/bramstroker/homeassistant-powercalc
+#
+powercalc:
+  scan_interval: 00:00:30
+  create_energy_sensors: true
+  create_utility_meters: true
+  utility_meter_types:
+    - daily
+    - weekly
+    - monthly

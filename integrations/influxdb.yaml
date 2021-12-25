@@ -1,0 +1,17 @@
+---
+influxdb:
+  ssl: false
+  host: !secret INFLUX_IP
+  port: !secret INFLUX_PORT
+  username: !secret INFLUX_USER
+  password: !secret INFLUX_PASSWORD
+  database: !secret INFLUX_DB
+  include:
+    entity_globs:
+      - sensor.*
+      - switch.*
+      - climate.*
+      - light.*
+      - person.*
+      - sun.*
+      - zone.*

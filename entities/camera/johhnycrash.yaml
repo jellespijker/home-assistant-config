@@ -1,0 +1,10 @@
+---
+# Configure my Ultimaker UM3 video stream
+#
+# https://www.home-assistant.io/integrations/generic/
+#
+platform: generic
+name: johhnycrash_cam
+still_image_url: !secret JOHHNYCRASH_CAMERA_URL
+framerate: 1
+verify_ssl: false

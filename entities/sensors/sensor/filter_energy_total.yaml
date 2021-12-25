@@ -1,0 +1,7 @@
+platform: filter
+name: "Filtered Energy Total"
+entity_id: sensor.energy_total
+filters:
+  - filter: outlier
+    window_size: 4
+    radius: 4.0

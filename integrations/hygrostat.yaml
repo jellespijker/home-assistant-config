@@ -1,0 +1,10 @@
+---
+generic_hygrostat:
+  - name: Bathroom
+    humidifier: switch.fan_bathroom
+    target_sensor: sensor.shower_boiler_humidity
+    target_humidity: 70
+    device_class: dehumidifier
+    min_cycle_duration: 00:05:00
+    dry_tolerance: 3
+    wet_tolerance: 3

@@ -1,0 +1,14 @@
+---
+# Configure the Tuya based thermostat in my kitchen.
+#
+# This is a Netmostat N1 controlling an IR floor heater.
+# It is connected using the localtuya integration.
+#
+# https://github.com/jellespijker/localtuya
+#
+host: !secret LOCALTUYA_CLIMATE_KITCHEN_IP
+device_id: !secret LOCALTUYA_CLIMATE_KITCHEN_DEVICE_ID
+local_key: !secret LOCALTUYA_CLIMATE_KITCHEN_LOCAL_KEY
+friendly_name: Climate Kitchen
+protocol_version: "3.3"
+entities: !include_dir_list ../climates/localtuya/climate_kitchen/

@@ -1,0 +1,6 @@
+---
+platform: powercalc
+entity_id: switch.ir_panel_girlcave
+standby_power: 0.2
+fixed:
+  power: 300

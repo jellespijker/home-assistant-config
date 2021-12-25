@@ -1,0 +1,14 @@
+---
+# Configuration of my Home Assistant
+#
+# Based on https://github.com/frenck/home-assistant-config
+#
+# The configuration.yaml is only used to bootstrap the system.
+#
+homeassistant:
+  # Load packages
+  packages: !include_dir_named integrations
+
+group: !include groups.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml

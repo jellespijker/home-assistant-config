@@ -1,0 +1,17 @@
+platform: ultimaker
+name: johhnycrash
+host: !secret JOHHNYCRASH_IP
+scan_interval: 10
+sensors:
+  - status
+  - state
+  - progress
+  - bed_temperature
+  - bed_temperature_target
+  - bed_type
+  - hotend_1_id
+  - hotend_1_temperature
+  - hotend_1_temperature_target
+  - hotend_2_id
+  - hotend_2_temperature
+  - hotend_2_temperature_target
