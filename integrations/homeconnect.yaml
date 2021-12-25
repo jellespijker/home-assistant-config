@@ -1,0 +1,4 @@
+---
+home_connect:
+  client_id: !secret HC_CLIENT_ID
+  client_secret: !secret HC_CLIENT_SECRET
