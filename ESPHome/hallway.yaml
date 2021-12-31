@@ -64,7 +64,7 @@ sensor:
     update_interval: 60s
 
   - platform: dht
-    pin: 35
+    pin: 19
     model: DHT22_TYPE2
     temperature:
       name: "Temperature ${friendly_name}"
@@ -99,7 +99,7 @@ sensor:
   
 binary_sensor:
   - platform: gpio
-    pin: 34
+    pin: 32 
     name: "PIR ${friendly_name}"
     device_class: motion
  
