@@ -31,7 +31,7 @@ wifi:
 captive_portal:
 
 i2c:
-
+  
 bme680_bsec:
 
 text_sensor:
@@ -71,6 +71,10 @@ sensor:
   - platform: wifi_signal
     name: "WiFi ${friendly_name}"
     update_interval: 60s
+
+  - platform: tsl2561
+    name: "Ambient Light ${friendly_name}"
+    update_interval: 30s
 
   - platform: bme680_bsec
     temperature:
