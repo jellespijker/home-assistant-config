@@ -1,6 +1,6 @@
 #---
 platform: powercalc
-entity_id: light.guestbedroom
+entity_id: light.hallway
 standby_power: 0.2
 linear:
   min_power: 1.0
