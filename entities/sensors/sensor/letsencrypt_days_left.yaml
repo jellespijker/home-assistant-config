@@ -1,0 +1,6 @@
+---
+platform: command_line
+name: Letsencrypt Certificate expires
+unit_of_measurement: day
+scan_interval: 3600
+command: !secret SSL_EXPIRE_CMD
