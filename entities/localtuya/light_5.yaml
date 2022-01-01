@@ -3,9 +3,9 @@
 #
 # https://github.com/jellespijker/localtuya
 #
-# host: !secret LOCALTUYA_LIGHT_5_IP
-# device_id: !secret LOCALTUYA_LIGHT_5_DEVICE_ID
-# local_key: !secret LOCALTUYA_LIGHT_5_LOCAL_KEY
-# friendly_name: Light 5
-# protocol_version: "3.3"
-# entities: !include_dir_list ../lights/localtuya/light_5
+host: !secret LOCALTUYA_LIGHT_5_IP
+device_id: !secret LOCALTUYA_LIGHT_5_DEVICE_ID
+local_key: !secret LOCALTUYA_LIGHT_5_LOCAL_KEY
+friendly_name: Light 5
+protocol_version: "3.3"
+entities: !include_dir_list ../lights/localtuya/light_5
