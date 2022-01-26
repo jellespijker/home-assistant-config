@@ -39,7 +39,7 @@ sensor:
   - platform: uptime
     name: "Uptime ${friendly_name}"
     id: uptime_sensor
-    update_interval: 60s
+    update_interval: 15min
     on_raw_value:
       then:
         - text_sensor.template.publish:
@@ -82,7 +82,7 @@ sensor:
     count_mode:
       rising_edge: DISABLE
       falling_edge: INCREMENT
-    update_interval: 10sec
+    update_interval: 1sec
     unit_of_measurement: "kW"
     accuracy_decimals: 5
     icon: "mdi:flash"

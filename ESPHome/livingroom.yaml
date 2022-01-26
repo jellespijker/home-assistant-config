@@ -70,7 +70,7 @@ sensor:
 
   - platform: wifi_signal
     name: "WiFi ${friendly_name}"
-    update_interval: 60s
+    update_interval: 15min
 
   - platform: tsl2561
     name: "Ambient Light ${friendly_name}"

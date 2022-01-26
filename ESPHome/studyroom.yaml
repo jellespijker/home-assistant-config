@@ -64,7 +64,7 @@ sensor:
 
   - platform: wifi_signal
     name: "WiFi ${friendly_name}"
-    update_interval: 60s
+    update_interval: 15min
 
   - platform: bme280
     temperature:
