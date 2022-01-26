@@ -1,7 +1,7 @@
 ---
 platform: integration
-source: sensor.energy_washingmachine
-name: power_washingmachine
+source: sensor.power_washingmachine
+name: energy_washingmachine
 round: 2
 method: left
 unit_prefix: k

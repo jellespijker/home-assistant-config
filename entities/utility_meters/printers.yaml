@@ -1,12 +1,12 @@
 energy_daily_printers:
-  source: sensor.power_printers
+  source: sensor.energy_printers
   name: Energy Daily 3D Printers
   cycle: daily
 energy_weekly_printers:
-  source: sensor.power_printers
+  source: sensor.energy_printers
   name: Energy Weekly 3D Printers
   cycle: weekly
 energy_monthly_printers:
-  source: sensor.power_printers
+  source: sensor.energy_printers
   name: Energy Monthly 3D Printers
   cycle: monthly

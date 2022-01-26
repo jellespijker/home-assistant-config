@@ -1,0 +1,12 @@
+energy_daily_livingroom:
+  source: sensor.energy_livingroom
+  name: Energy Daily Livingroom
+  cycle: daily
+energy_weekly_livingroom:
+  source: sensor.energy_livingroom
+  name: Energy Weekly Livingroom
+  cycle: weekly
+energy_monthly_livingroom:
+  source: sensor.energy_livingroom
+  name: Energy Monthly Livingroom
+  cycle: monthly

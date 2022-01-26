@@ -1,0 +1,7 @@
+---
+platform: integration
+source: sensor.em_6_power
+name: energy_livingroom
+round: 2
+method: left
+unit_prefix: k

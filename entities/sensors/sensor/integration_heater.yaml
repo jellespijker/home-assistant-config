@@ -1,0 +1,7 @@
+---
+platform: integration
+source: sensor.power_heating_total
+name: energy_heating_total
+round: 2
+method: left
+unit_prefix: k

@@ -1,6 +1,6 @@
 ---
 platform: integration
-source: sensor.energy_printers
-name: power_printers
+source: sensor.power_printers
+name: energy_printers
 round: 2
 unit_prefix: k

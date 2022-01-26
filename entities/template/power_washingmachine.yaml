@@ -1,8 +1,8 @@
 ---
 sensor:
-  - name: Energy Washingmachine
+  - name: Power Washingmachine
     state: >
       {{ state_attr('switch.washingmachine', 'current_consumption') | float(default = 0) }}
     unit_of_measurement: W
     state_class: measurement
-    device_class: energy
+    device_class: power

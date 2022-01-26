@@ -1,0 +1,12 @@
+energy_daily_kitchen_island:
+  source: sensor.energy_kitchen_island
+  name: Energy Daily Kitchen Island
+  cycle: daily
+energy_weekly_kitchen_island:
+  source: sensor.energy_kitchen_island
+  name: Energy Weekly Kitchen Island
+  cycle: weekly
+energy_monthly_kitchen_island:
+  source: sensor.energy_kitchen_island
+  name: Energy Monthly Kitchen Island
+  cycle: monthly

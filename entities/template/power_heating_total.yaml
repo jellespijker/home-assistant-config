@@ -1,13 +1,13 @@
 ---
 sensor:
-  - name: Energy Heating Total
+  - name: Power Heating Total
     state: >
-          {% set floorheating = states('sensor.shellyem_e8db84aa2462_channel_1_power') | float(default = 0) %}
+          {% set floorheating = states('sensor.em_3_power') | float(default = 0) %}
           {% set studyroom = states('sensor.ir_panel_study_power') | float(default = 0) %}
           {% set guestbedroom = states('sensor.ir_panel_guestbedroom_power') | float(default = 0) %}
           {% set girlcave = states('sensor.ir_panel_girlcave_power') | float(default = 0) %}
 
-          {{ floorheating + studyroom + guestbedroom + girlcave | round(2, default = 0) }}
+          {{ max([0, floorheating]) + studyroom + guestbedroom + girlcave | round(2, default = 0) }}
     unit_of_measurement: W
     state_class: measurement
-    device_class: energy
+    device_class: power

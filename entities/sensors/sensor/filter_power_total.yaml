@@ -1,6 +1,6 @@
 platform: filter
-name: "Filtered Energy Total"
-entity_id: sensor.energy_total
+name: "Filtered Power Total"
+entity_id: sensor.power_total
 filters:
   - filter: outlier
     window_size: 4

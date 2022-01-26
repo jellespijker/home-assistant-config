@@ -1,0 +1,12 @@
+energy_daily_heating_total:
+  source: sensor.energy_heating_total
+  name: Energy Daily Heating
+  cycle: daily
+energy_weekly_heating_total:
+  source: sensor.energy_heating_total
+  name: Energy Weekly Heating
+  cycle: weekly
+energy_monthly_heating_total:
+  source: sensor.energy_heating_total
+  name: Energy Monthly Heating
+  cycle: monthly

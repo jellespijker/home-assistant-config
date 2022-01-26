@@ -1,0 +1,11 @@
+---
+sensor:
+  - name: Total Consumed Power
+    state: >
+          {% set power_total = states('sensor.filtered_power_total') | float(default = 0) * 1000 %}
+          {% set yield_total = states('sensor.grid_power') | float(default = 0) %}
+
+          {{ power_total + yield_total | round(2, default = 0) }}
+    unit_of_measurement: W
+    state_class: measurement
+    device_class: power

@@ -1,0 +1,7 @@
+---
+platform: integration
+source: sensor.power_kitchen_island
+name: energy_kitchen_island
+round: 2
+method: left
+unit_prefix: k

@@ -1,6 +1,6 @@
 ---
 platform: derivative
-name: Energy Total
+name: Power Total
 source: sensor.power_meter_hallway
 unit: kW
 unit_time: h

@@ -1,0 +1,13 @@
+# Kitchen Island - Induction cookplate and instantaneous water heater
+---
+sensor:
+  - name: Power Kitchen Island 
+    state: >
+          {% set phase_a = states('sensor.em_1_power') | float(default = 0) %}
+          {% set phase_b = states('sensor.em_4_power') | float(default = 0) %}
+          {% set phase_c = states('sensor.em_5_power') | float(default = 0) %}
+
+          {{ max([0, phase_a]) + max([0, phase_b]) + max([0, phase_c]) | round(2, default = 0) }}
+    unit_of_measurement: W
+    state_class: measurement
+    device_class: power
