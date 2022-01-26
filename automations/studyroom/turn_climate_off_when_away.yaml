@@ -4,8 +4,8 @@ description: ''
 trigger:
 - platform: state
   entity_id: binary_sensor.pir_studyroom
-  from: on
-  to: off
+  from: 'on'
+  to: 'off'
   for:
     hours: 0
     minutes: 5
