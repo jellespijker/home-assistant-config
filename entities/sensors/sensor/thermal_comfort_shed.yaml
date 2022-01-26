@@ -1,0 +1,8 @@
+---
+platform: thermal_comfort
+sensors:
+  shed:
+    friendly_name: Thermal Comfort shed
+    unique_id: e47d0a08-1ceb-434e-8988-93fb9a8dd006
+    temperature_sensor: sensor.temperature_shed
+    humidity_sensor: sensor.humidity_shed
