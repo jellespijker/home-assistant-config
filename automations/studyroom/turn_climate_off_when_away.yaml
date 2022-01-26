@@ -1,0 +1,18 @@
+id: '1640450865766'
+alias: Do not heat study room when not present
+description: ''
+trigger:
+- platform: state
+  entity_id: binary_sensor.pir_studyroom
+  from: on
+  to: off
+  for:
+    hours: 0
+    minutes: 5
+    seconds: 0
+condition: []
+action:
+- service: climate.turn_off
+  target:
+    entity_id: climate.thermostat_study
+mode: single

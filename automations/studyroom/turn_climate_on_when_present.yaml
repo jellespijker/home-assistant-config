@@ -1,0 +1,18 @@
+id: '1640460865766'
+alias: Heat study room when present
+description: ''
+trigger:
+- platform: state
+  entity_id: binary_sensor.pir_studyroom
+  from: off
+  to: on
+  for:
+    hours: 0
+    minutes: 5
+    seconds: 0
+condition: []
+action:
+- service: climate.turn_on
+  target:
+    entity_id: climate.thermostat_study
+mode: single
